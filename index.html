@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Leaf Technolabs - A premier software development firm. Our new website is currently under development. Stay tuned for updates!">
+    <title>Leaf Technolabs | Under Development</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Animated Background Blobs -->
+    <div class="background-animation">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <main class="container">
+        <!-- Glassmorphism Main Card -->
+        <div class="glass-card">
+
+            <header class="header">
+                <img src="images/logo.png" alt="Leaf Technolabs Logo" class="logo">
+            </header>
+
+            <div class="content">
+                <div class="badge">Coming Soon</div>
+                <h1 id="main-title">We are crafting something <span class="highlight">extraordinary.</span></h1>
+                <p id="main-description">Leaf Technolabs is building a new digital experience. We are preparing to
+                    launch a platform that reflects our commitment to innovation and excellence.</p>
+
+                <div class="progress-container">
+                    <div class="progress-bar">
+                        <div class="progress-fill"></div>
+                    </div>
+                    <p class="progress-text">Development in progress...</p>
+                </div>
+
+                <div class="contact-section">
+                    <p>Have an urgent inquiry?</p>
+                    <a href="mailto:contact@leaftechnolabs.com" class="btn-primary" id="contact-btn">Get in Touch</a>
+                </div>
+            </div>
+
+            <footer class="footer">
+                <p>&copy; <span id="year"></span> Leaf Technolabs. All rights reserved.</p>
+            </footer>
+        </div>
+    </main>
+
+    <script>
+        // Set dynamic year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
