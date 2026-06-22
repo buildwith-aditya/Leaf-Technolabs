@@ -41,17 +41,6 @@ const cio = new IntersectionObserver(entries => {
 }, { threshold: 0.4 });
 document.querySelectorAll('[data-count]').forEach(el => cio.observe(el));
 
-// Contact form (front-end only — wire to backend / Frappe CRM web form later)
-const form = document.querySelector('#contact-form');
-if (form) {
-  form.addEventListener('submit', ev => {
-    ev.preventDefault();
-    const btn = form.querySelector('button[type=submit]');
-    btn.textContent = 'Thank you! We\u2019ll be in touch shortly.';
-    btn.disabled = true;
-    btn.style.opacity = .75;
-  });
-}
 
 // Footer year
 document.querySelectorAll('[data-year]').forEach(el => el.textContent = new Date().getFullYear());
